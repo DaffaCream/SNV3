@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-white text-sm md:text-2xl lg:text-5xl font-bold leading-tight lg:leading-tight;
+  }
+  h2 {
+    @apply text-white text-sm lg:text-4xl font-semibold leading-tight;
+  }
+  h3 {
+    @apply text-white text-sm lg:text-2xl font-semibold leading-tight;
+  }
+  h4 {
+    @apply text-white text-lg font-semibold leading-tight;
+  }
+  h6 {
+    @apply text-white text-base font-semibold leading-tight;
+  }
+  p {
+    @apply text-white text-[8px] md:text-[12px] lg:text-sm xl:text-[14px];
+  }
+  button {
+    @apply flex justify-center items-center gap-2 py-1 lg:py-2 px-3 lg:px-4 font-normal lg:font-medium text-[8px] lg:text-lg rounded-lg;
+  }
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.slick-slide div {
+  /* position: sticky; */
+  @media (min-width: 1024px) {
+    margin-right: 0.75rem;
+  }
+  /* margin-right: 1px; */
+  margin-left: 0.5rem;
+  display: flex;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  padding-top: 4px;
+  @media (min-width: 1024px) {
+    padding-top: 1rem;
+  }
+  @media (min-width: 768px) {
+    padding-top: 1rem;
+  }
+}
+
+.slick-slide div:hover {
+  @media (min-width: 1024px) {
+    padding: 1.25rem 0;
+  }
+  @media (min-width: 768px) {
+    padding: 1.25rem 0;
+  }
+}
+
+.slick-slide div:focus {
+  border: none;
+  outline: none;
+}
